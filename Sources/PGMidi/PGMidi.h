@@ -133,6 +133,7 @@ extern NSString * const PGMidiConnectionKey;
 @property (nonatomic,assign)   BOOL               virtualSourceEnabled;
 @property (nonatomic,assign)   BOOL               virtualDestinationEnabled;
 
+- (MIDIPortRef) outputPort;
 /// Send a MIDI byte stream to every connected MIDI port
 - (void) sendBytes:(const UInt8*)bytes size:(UInt32)size;
 - (void) sendPacketList:(const MIDIPacketList *)packetList;

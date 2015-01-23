@@ -27,7 +27,6 @@ static void PGMIDIVirtualDestinationReadProc(const MIDIPacketList *pktlist, void
 
 @interface PGMidi ()
 - (void) scanExistingDevices;
-- (MIDIPortRef) outputPort;
 @property (nonatomic, retain) NSTimer *rescanTimer;
 @end
 
